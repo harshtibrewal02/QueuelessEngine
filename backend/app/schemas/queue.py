@@ -18,6 +18,7 @@ class QueueJoinResponse(BaseModel):
 # ------------------------
 class QueueStatusResponse(BaseModel):
     currently_serving: Optional[int]
+    last_done_patient: Optional[int] = None
     total_waiting: int
     estimated_wait_time: int
 
